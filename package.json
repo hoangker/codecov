@@ -3,7 +3,7 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "lines": 15
+        "lines": 4
       }
     },
     "coverageReporters": [
