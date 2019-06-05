@@ -1,5 +1,17 @@
 {
   "name": "codecoverage",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "lines": 15
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "html",
+      "lcov"
+    ]
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
