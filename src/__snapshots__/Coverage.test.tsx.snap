@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Coverage component it matches the snapshot 1`] = `
-<div>
-  <span>
-    Hello World!
-  </span>
-</div>
-`;
