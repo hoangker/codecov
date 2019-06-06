@@ -1,9 +1,9 @@
 {
-  "name": "codecoverage",
+  "name": "vrar",
   "jest": {
     "coverageThreshold": {
       "global": {
-        "lines": 15
+        "lines": 4
       }
     },
     "coverageReporters": [
@@ -15,19 +15,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@playlyfe/gql": "^2.6.1",
     "@types/jest": "24.0.13",
-    "@types/node": "12.0.4",
+    "@types/node": "12.0.3",
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
     "typescript": "3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --verbose --coverage",
+    "test": "react-scripts test --verbose --coverage > coverage.txt",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,5 +48,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
